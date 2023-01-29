@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='databricks-google-sheets',
-    version='0.6.0',
+    version='0.8.0',
     author='Vijay Balasubramaniam',
     author_email='vbalasu@gmail.com',
     description='Interact with Google Sheets from Databricks',

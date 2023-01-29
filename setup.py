@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='databricks-google-sheets',
-    version='0.1.0',
+    version='0.6.0',
     author='Vijay Balasubramaniam',
     author_email='vbalasu@gmail.com',
     description='Interact with Google Sheets from Databricks',
@@ -13,6 +13,8 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/vbalasu/databricks-google-sheets',
     packages=find_packages(),
+    py_modules=['databricks_google_sheets'],
+    install_requires=['gspread-pandas'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

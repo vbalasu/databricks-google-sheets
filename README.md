@@ -14,6 +14,21 @@ Please follow these steps. Be sure to replace all {{PLACEHOLDERS}} with appropri
 8. Share your Google Sheet with the user `databricks-google-sheets@{{MY-AWESOME-PROJECT}}.iam.gserviceaccount.com`, and give Editor privileges
 
 
+### Installation
+
+##### Method 1
+
+Insert the following cell at the top of your Databricks notebook
+```
+%pip install databricks-google-sheets
+```
+
+##### Method 2
+
+Add the library to your Databricks compute cluster by going to Compute --> (Your cluster) --> Libraries --> Install New --> PyPI
+
+<img src="media/install-library.png" width="600px">
+
 
 ### Usage within Databricks Python notebook
 

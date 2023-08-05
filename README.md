@@ -12,6 +12,7 @@ Please follow these steps. Be sure to replace all {{PLACEHOLDERS}} with appropri
 6. On your local machine, use the Databricks CLI to create a new secret scope. Eg. `databricks secrets create-scope --scope databricks-google-sheets --profile DEFAULT`
 7. Create a new secret within the newly created secret scope. Eg. `databricks secrets put --scope databricks-google-sheets --key "databricks-google-sheets@{{MY-AWESOME-PROJECT}}.iam.gserviceaccount.com" --binary-file {{PATH-TO-JSON-FILE-FROM-STEP-5}} --profile DEFAULT`
 8. Share your Google Sheet with the user `databricks-google-sheets@{{MY-AWESOME-PROJECT}}.iam.gserviceaccount.com`, and give Editor privileges
+9. Give your project permissions to use _Google Drive_ and _Google Sheets_ API. You can do so by clicking the _Enabled APIs and services_ section of your project.
 
 
 ### Installation
